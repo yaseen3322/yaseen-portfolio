@@ -1,17 +1,20 @@
 // Initialize Animations
 AOS.init({
-    duration: 1000,
-    once: true
+    duration: 800, // Faster animation for mobile
+    once: true,
+    disable: 'mobile' // Optional: Disable animations on phone if it's lagging
 });
 
-// Mobile Menu
+// Mobile Menu Logic
 const toggle = document.querySelector('.mobile-toggle');
 const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
 
 if (toggle) {
     toggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
-        // Change icon
+        
+        // Toggle Icon between Bars and Times (X)
         const icon = toggle.querySelector('i');
         if (navMenu.classList.contains('active')) {
             icon.classList.remove('fa-bars');
@@ -21,5 +24,14 @@ if (toggle) {
             icon.classList.add('fa-bars');
         }
     });
-
 }
+
+// Close menu when clicking a link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        const icon = toggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    });
+});
