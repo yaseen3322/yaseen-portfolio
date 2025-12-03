@@ -21,4 +21,5 @@ if (toggle) {
             icon.classList.add('fa-bars');
         }
     });
+
 }
