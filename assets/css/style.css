@@ -20,7 +20,7 @@ body {
 }
 
 a { text-decoration: none; color: inherit; transition: var(--transition); }
-img { max-width: 100%; display: block; } /* Ensures images never overflow */
+img { max-width: 100%; height: auto; display: block; } /* Ensures images never overflow */
 ul { list-style: none; }
 
 /* --- UTILITIES --- */
