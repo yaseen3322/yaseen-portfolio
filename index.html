@@ -7,9 +7,16 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+            visibility: visible !important;
+        }
+    </style>
 </head>
 <body>
 
@@ -29,7 +36,7 @@
 
     <section class="hero">
         <div class="container hero-grid">
-            <div class="hero-text" data-aos="fade-right">
+            <div class="hero-text">
                 <span class="text-primary">Hello, I am</span>
                 <h1>Syed Muhammad Yaseen</h1>
                 <p>A professional Content Creator, Video Editor, and Graphic Designer. I help brands and creators grow with premium digital content.</p>
@@ -38,7 +45,7 @@
                     <a href="https://wa.me/03198664173" class="btn btn-outline">WhatsApp Me</a>
                 </div>
             </div>
-            <div class="hero-img-box" data-aos="zoom-in">
+            <div class="hero-img-box">
                 <img src="assets/images/my-hero.jpg" alt="Syed Muhammad Yaseen">
             </div>
         </div>
@@ -46,10 +53,10 @@
 
     <section class="section">
         <div class="container hero-grid">
-            <div class="hero-img-box" data-aos="fade-right">
+            <div class="hero-img-box">
                 <img src="assets/images/my-about.jpg" alt="About Yaseen">
             </div>
-            <div class="about-text" data-aos="fade-left">
+            <div class="about-text">
                 <h2 class="text-primary">About Me</h2>
                 <h3>Transforming Ideas into Digital Reality</h3>
                 <p>With years of experience managing channels like AiriZoo and brands like Sunrise Paint, I specialize in creating content that engages audiences.</p>
@@ -60,11 +67,11 @@
 
     <section class="section">
         <div class="container">
-            <h2 class="text-center" data-aos="fade-up">Featured Projects</h2>
+            <h2 class="text-center">Featured Projects</h2>
             <br>
             <div class="grid-3">
                 
-                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card">
                     <div class="project-thumb ratio-16-9">
                         <img src="assets/images/airizoo-thumb.jpg" alt="AiriZoo">
                     </div>
@@ -73,7 +80,7 @@
                     <a href="https://www.youtube.com/@HambyLumby" target="_blank" class="text-primary">Visit Channel <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card">
                     <div class="project-thumb ratio-1-1">
                         <img src="assets/images/sunrise-thumb.jpg" alt="Sunrise Paint">
                     </div>
@@ -82,7 +89,7 @@
                     <a href="https://www.instagram.com/tgbbnjun3571?igsh=MTlybmg0anF4bWgwbw==" target="_blank" class="text-primary">View Instagram <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card">
                     <div class="project-thumb ratio-16-9">
                         <img src="assets/images/animation-thumb.jpg" alt="3D Animation">
                     </div>
@@ -111,8 +118,6 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
     <script src="js/script.js"></script>
 </body>
 </html>
