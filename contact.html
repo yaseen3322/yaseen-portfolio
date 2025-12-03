@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Yaseen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Yaseen<span>.</span></a>
+            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="testimonials.html" class="nav-link">Reviews</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <div class="text-center" data-aos="fade-down">
+                <h1 class="text-primary">Get In Touch</h1>
+                <p>Have a project? Let's discuss.</p>
+            </div>
+            <br>
+            
+            <div class="card" data-aos="fade-up">
+                <form class="contact-form" action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    
+                    <label>Message</label>
+                    <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+
+            <div class="grid-3" style="margin-top: 50px;">
+                <div class="text-center">
+                    <i class="fab fa-whatsapp fa-2x text-primary"></i>
+                    <p style="margin-top:10px"><a href="https://wa.me/03198664173">0319 866 4173</a></p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-envelope fa-2x text-primary"></i>
+                    <p style="margin-top:10px"><a href="mailto:yaseen.creatives@gmail.com">yaseen.creatives@gmail.com</a></p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-instagram fa-2x text-primary"></i>
+                    <p style="margin-top:10px"><a href="https://www.instagram.com/tgbbnjun3571?igsh=MTlybmg0anF4bWgwbw==">DM Me</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Syed Muhammad Yaseen. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
